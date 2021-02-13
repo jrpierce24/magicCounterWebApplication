@@ -22,7 +22,21 @@ class magicGame{
             var current = this.playerList[i];
             current.setHtmlAccess(accessHtml);
 
-            this.playArea.innerHTML += '<div id="playerBox">Player Box<div id="' + accessHtml + '"><div></div></div></div>';
+            this.playArea.innerHTML += '<div id="' + accessHtml + '"><div id="name">Name</div><div id="topButt"><div id="IncAmount">Inc5</div><div id="Inc1">&#9650</div></div><div id="health">20</div><div id="botButt"><div id="DecAmount">Dec5</div><div id="Dec1">&#9660</div></div></div>';
+            
+            // <div id="accessHtml">
+                // <div id="name">Name</div>
+                // <div id="topButt">
+                //     <div id="IncAmount">Inc5</div>
+                //     <div id="Inc1">Inc1</div>
+                // </div>
+                // <div id="health">20</div>
+                // <div id="botButt">
+                //     <div id="DecAmount">Dec5</div>
+                //     <div id="Dec1">Dec1</div>
+                // </div>
+            // </div>
+
         }
     }
 
