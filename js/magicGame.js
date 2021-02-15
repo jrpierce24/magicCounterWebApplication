@@ -4,8 +4,9 @@ class magicGame{
 
         this.amtPlayers = amtPlayers;
         this.gameMode = gameMode;
-
         this.createPlayers();
+        this.defaultHealth = this.player1.getHealth();
+
         this.drawGame();
     }
     createPlayers() {
@@ -39,6 +40,20 @@ class magicGame{
 
         }
     }
+
+    setDefualtHealth(){
+        this.player1.setHealth = this.defaultHealth;
+        this.player2.setHealth = this.defaultHealth;
+        this.player3.setHealth = this.defaultHealth;
+        this.player4.setHealth = this.defaultHealth;
+    }
+    //Set the players health value by an amt, 
+    setPlayerHealth(){
+        for(var i = 0; i < this.amtPlayers; ++i){
+
+        }
+    }
+
 
     getHealth(){
         return this.player1.getHealth();

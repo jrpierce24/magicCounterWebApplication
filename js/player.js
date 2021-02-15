@@ -21,6 +21,10 @@ class Player{
        }
     }
 
+    setHealth(health){
+        this.health = health;
+    }
+
     setHtmlAccess(htmlA){
         this.htmlAccess = htmlA;
     }
