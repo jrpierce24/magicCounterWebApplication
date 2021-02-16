@@ -16,37 +16,37 @@
     background-color: blanchedalmond;
     color: black;
 }
-#player1 #name {
+#player1 .name {
     display: flex;
     justify-content: center;
     font-size: 24px;
 }
-#player1 #topButt {
+#player1 .topButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player1 #topButt #IncAmount{
+#player1 .topButt .IncAmount{
     justify-content: center;
 }
-#player1 #health {
+#player1 .health {
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 24px;
 }
-#player1 #topButt #Inc1{
+#player1 .topButt .Inc1{
     justify-content: center;
 }
-#player1 #botButt {
+#player1 .botButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player1 #botButt #DecAmount{
+#player1 .botButt .DecAmount{
     
     justify-content: center;
     
 }
-#player1 #topButt #Dec1{
+#player1 .topButt .Dec1{
     
     justify-content: center;
 }
@@ -59,37 +59,37 @@
     color: black;
 }
 
-#player2 #name {
+#player2 .name {
     display: flex;
     justify-content: center;
     font-size: 24px;
 }
-#player2 #topButt {
+#player2 .topButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player2 #topButt #IncAmount{
+#player2 .topButt .IncAmount{
     justify-content: center;
 }
-#player2 #health {
+#player2 .health {
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 24px;
 }
-#player2 #topButt #Inc1{
+#player2 .topButt .Inc1{
     justify-content: center;
 }
-#player2 #botButt {
+#player2 .botButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player2 #botButt #DecAmount{
+#player2 .botButt .DecAmount{
     
     justify-content: center;
     
 }
-#player2 #topButt #Dec1{
+#player2 .topButt .Dec1{
     
     justify-content: center;
 }
@@ -103,37 +103,37 @@
     color: black;
 }
 
-#player3 #name {
+#player3 .name {
     display: flex;
     justify-content: center;
     font-size: 24px;
 }
-#player3 #topButt {
+#player3 .topButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player3 #topButt #IncAmount{
+#player3 .topButt .IncAmount{
     justify-content: center;
 }
-#player3 #health {
+#player3 .health {
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 24px;
 }
-#player3 #topButt #Inc1{
+#player3 .topButt .Inc1{
     justify-content: center;
 }
-#player3 #botButt {
+#player3 .botButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player3 #botButt #DecAmount{
+#player3 .botButt .DecAmount{
     
     justify-content: center;
     
 }
-#player3 #topButt #Dec1{
+#player3 .topButt .Dec1{
     
     justify-content: center;
 }
@@ -147,37 +147,37 @@
     color: black;
 }
 
-#player4 #name {
+#player4 .name {
     display: flex;
     justify-content: center;
     font-size: 24px;
 }
-#player4 #topButt {
+#player4 .topButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player4 #topButt #IncAmount{
+#player4 .topButt .IncAmount{
     justify-content: center;
 }
-#player4 #health {
+#player4 .health {
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 24px;
 }
-#player4 #topButt #Inc1{
+#player4 .topButt .Inc1{
     justify-content: center;
 }
-#player4 #botButt {
+#player4 .botButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player4 #botButt #DecAmount{
+#player4 .botButt .DecAmount{
     
     justify-content: center;
     
 }
-#player4 #topButt #Dec1{
+#player4 .topButt .Dec1{
     
     justify-content: center;
 }
