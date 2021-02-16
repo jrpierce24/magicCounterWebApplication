@@ -1,183 +1,103 @@
-#playArea {
+html { 
+    -webkit-user-select: none;
+    user-select: none; 
+}
 
+#playArea {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    background-color: dimgrey;
+    background-color: #8b0000;
     border: 30px;
     border-color: black;
 }
-
 #player1 {
+    
     padding: 10px;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: auto auto auto auto;
-    background-color: blanchedalmond;
+    background-color: #8b0000;
+    font-family: 'Source Sans Pro', sans-serif;
     color: black;
-}
-#player1 .name {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-#player1 .topButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player1 .topButt .IncAmount{
-    justify-content: center;
-}
-#player1 .health {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 24px;
-}
-#player1 .topButt .Inc1{
-    justify-content: center;
-}
-#player1 .botButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player1 .botButt .DecAmount{
-    
-    justify-content: center;
-    
-}
-#player1 .topButt .Dec1{
-    
-    justify-content: center;
 }
 #player2 {
     padding: 10px;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: 4;
-    background-color: blanchedalmond;
+    background-color: #8b0000;
+    font-family: 'Source Sans Pro', sans-serif;
     color: black;
 }
-
-#player2 .name {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-#player2 .topButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player2 .topButt .IncAmount{
-    justify-content: center;
-}
-#player2 .health {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 24px;
-}
-#player2 .topButt .Inc1{
-    justify-content: center;
-}
-#player2 .botButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player2 .botButt .DecAmount{
-    
-    justify-content: center;
-    
-}
-#player2 .topButt .Dec1{
-    
-    justify-content: center;
-}
-
 #player3 {
     padding: 10px;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: 4;
-    background-color: blanchedalmond;
+    background-color: #8b0000;
+    font-family: 'Source Sans Pro', sans-serif;
     color: black;
 }
-
-#player3 .name {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-#player3 .topButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player3 .topButt .IncAmount{
-    justify-content: center;
-}
-#player3 .health {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 24px;
-}
-#player3 .topButt .Inc1{
-    justify-content: center;
-}
-#player3 .botButt {
-    display: flex;
-    justify-content: space-evenly;
-}
-#player3 .botButt .DecAmount{
-    
-    justify-content: center;
-    
-}
-#player3 .topButt .Dec1{
-    
-    justify-content: center;
-}
-
 #player4 {
     padding: 10px;
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: 4;
-    background-color: blanchedalmond;
+    background-color: #8b0000;
+    font-family: 'Source Sans Pro', sans-serif;
     color: black;
 }
-
-#player4 .name {
+.name {
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 30px;
 }
-#player4 .topButt {
+.topButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player4 .topButt .IncAmount{
+.IncAmount{
     justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-tap-highlight-color: transparent;
+
 }
-#player4 .health {
+.Inc1{
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-tap-highlight-color: transparent;
+}
+.health {
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-size: 24px;
+    font-size: 30px;
 }
-#player4 .topButt .Inc1{
-    justify-content: center;
-}
-#player4 .botButt {
+.botButt {
     display: flex;
     justify-content: space-evenly;
 }
-#player4 .botButt .DecAmount{
-    
+.DecAmount{
     justify-content: center;
-    
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-tap-highlight-color: transparent;
 }
-#player4 .topButt .Dec1{
+.Dec1{
     
     justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-tap-highlight-color: transparent;
 }

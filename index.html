@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/titleImage.jpg"/>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/playerStyleSheet.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    </style>
+    <script src="js/calculator.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/magicGame.js"></script>
     <script src="js/player.js"></script>
 
+
     <title>Magic Counter</title>
 </head>
 <body>
-    <header class='title'>Magic Counter</header>
+    <div class='title'><h1>Magic Counter</h1></div>
     <div id="visable">
         <div class = "selection-grid-container">
             <div class='grid-container-gameMode'>
@@ -31,9 +37,9 @@
     <div id="playArea">
     
     </div>
-    <div class='footer'>
-
-        <div id='reset'>R</div>
+    <div id='footer'>
+        <div class='calculator' onclick="startCalc()"><img src="img/calcPic.png" alt="calcPic"></div>
+        <div class='reset'><img src="img/resetPic.png" alt=""></div>
     </div>
 </body>
 </html>

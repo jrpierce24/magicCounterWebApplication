@@ -1,8 +1,11 @@
 var gameMode = 1; // Commander or standard  <--> 0 or 1
 var amtPlayers = 2;
 var game;
+var calculator;
 
 window.onload = function(){
+    document.getElementById("Standard").style.backgroundColor = "#0E5C8C";
+    document.getElementById("twoPlayers").style.backgroundColor = "#0E5C8C";
     prepareOnClicks();
 }
 
@@ -41,13 +44,14 @@ function prepareOnClicks(){
     }
     document.getElementById("start").onclick = function() {
         document.getElementById("visable").style.display = "none";
+        document.getElementById("visable").style.visibility = "hidden";
         game = new magicGame(gameMode, amtPlayers);
 
     }
 }
 
 function highlight(myID){
-    document.getElementById(myID).style.backgroundColor = "blue";
+    document.getElementById(myID).style.backgroundColor = "#0E5C8C";
 }
 function unHighLightPlayers(){
     document.getElementById("twoPlayers").style.backgroundColor = null;
@@ -58,6 +62,10 @@ function unHighLightPlayers(){
 function unHighlightGame(){
     document.getElementById("Commander").style.backgroundColor = null;
     document.getElementById("Standard").style.backgroundColor = null;
+}
+
+function startCalc(){
+    this.calculator = new Calculator();
 }
 
 function getGame(){

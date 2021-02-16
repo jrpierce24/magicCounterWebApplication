@@ -52,7 +52,7 @@ class magicGame{
 
         }
 
-        var thisQ = document.querySelector("#reset").setAttribute("onclick", "game.reset()")
+        var thisQ = document.querySelector(".reset").setAttribute("onclick", "game.reset()")
 
 
     }

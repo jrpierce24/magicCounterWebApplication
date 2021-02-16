@@ -1,13 +1,26 @@
 .html {
     margin: 5%;
+
 }
 .title {
-    padding-top: 20px;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: auto, auto, auto;
+    grid-template-rows: auto;
     text-align: center;
     font-size: 20px;
-    
+    font-family: 'Source Sans Pro', sans-serif;
     color:black;
 }
+
+.title h1 {
+    align-content: space-around;
+    padding: 10px;
+    border: 3px solid black;
+
+}
+
 .grid-container-gameMode{
     display: grid;
     list-style-type: none;
@@ -16,6 +29,7 @@
     overflow: hidden;
     background-color: #333333;
 }
+
 .grid-container-players {
     display: grid;
     border: darkgreen;
@@ -25,6 +39,7 @@
     overflow: hidden;
     background-color: #333333;
 }
+
 .selection-grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -35,6 +50,7 @@
     overflow: hidden;
     background-color: #FFFFFF;
 }
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -61,21 +77,29 @@ li a:hover {
     background-color: #111111;
 }
 
-#reset {
+.reset {
     grid-column-start: 5;
     grid-column-end: 6;
     align-content: flex-end;
-    background-color: red;
-    text-decoration: black;
-    padding: 20px;
-
+    width: 200px;
+    height:200px;
+    overflow:hidden;
 }
 
-.footer {
+.calculator {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-content: flex-start;
+    width: 200px;
+    height:200px;
+    overflow:hidden;
+}
+
+#footer {
     display:grid;
     grid-template-columns: 6;
     grid-template-rows: 1;
-    padding-top: 30%;
+    padding-top: 10%;
 }
 
 
