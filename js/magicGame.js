@@ -24,17 +24,9 @@ class magicGame{
             var current = this.playerList[i];
             current.setHtmlAccess(accessHtml);
 
+            //Creates HTML GUI
             this.playArea.innerHTML += '<div id="' + accessHtml + '"><div class="name">Name</div><div class="topButt"><div class="IncAmount">Inc5</div><div class="Inc1">&#9650</div></div><div class="health">20</div><div class="botButt"><div class="DecAmount">Dec5</div><div class="Dec1">&#9660</div></div></div>';
             
-            var thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("Inc1");
-            
-            thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", 1)");
-            
-            thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("Dec1");
-
-            thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", (-1))");
-
-
             // <div id="accessHtml">
                 // <div class="name">Name</div>
                 // <div class="topButt">
@@ -48,20 +40,39 @@ class magicGame{
                 // </div>
             // </div>
 
+
+            //Gives Functions to the buttons
+            var thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("Inc1");
+            
+            thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", 1)");
+            
+            thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("Dec1");
+
+            thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", (-1))");
+
         }
+
+        var thisQ = document.querySelector("#reset").setAttribute("onclick", "game.reset()")
+
+
     }
 
-        // this.player1.setHealth = this.defaultHealth;
-        // this.player2.setHealth = this.defaultHealth;
-        // this.player3.setHealth = this.defaultHealth;
-        // this.player4.setHealth = this.defaultHealth;
-
+    reset(){
+        this.setDefaultHealth();
+    }
 
     setDefaultHealth(){
         for(var i = 0; i < amtPlayers; ++i){
-            this.setPlayerHealth(i, 0);
+            this.gamePlayerHealth(i);
         }
     }
+
+    gamePlayerHealth(selector){
+        var current = this.playerList[selector];
+        current.setHealth(this.defaultHealth);
+        this.setPlayerHealth(selector, 0);
+    }
+
     // Updates HTML GUI and player object
     setPlayerHealth(selector, health){
 
@@ -78,11 +89,10 @@ class magicGame{
 
     }
 
-
     getHealth(){
         return this.player1.getHealth();
     }
-    getGameMode(){
-        return gameMode;
-    }
+
+
+
 }

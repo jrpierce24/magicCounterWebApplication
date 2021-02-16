@@ -3,10 +3,10 @@ class Player{
     health;
 
     constructor(gameMode, amtPlayers){
-        this.health = this.setHealth(gameMode, amtPlayers);
+        this.health = this.setGameHealth(gameMode, amtPlayers);
     }
 
-    setHealth(gameMode, amtPlayers){
+    setGameHealth(gameMode, amtPlayers){
        if(gameMode == 0){
            return 40;
        }
@@ -30,6 +30,10 @@ class Player{
 
     setHtmlAccess(htmlA){
         this.htmlAccess = htmlA;
+    }
+
+    setHealth(health){
+        this.health = health;
     }
 
     getHtmlAccess(){
