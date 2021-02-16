@@ -1,4 +1,4 @@
-var gameMode = 0; // Commander or standard  <--> 0 or 1
+var gameMode = 1; // Commander or standard  <--> 0 or 1
 var amtPlayers = 2;
 var game;
 
@@ -14,13 +14,13 @@ function prepareOnClicks(){
     document.getElementById("Commander").onclick = function() {
         unHighlightGame()
         highlight("Commander");
-        gameMode = 1;
+        gameMode = 0;
         console.log("Game Mode: " + gameMode);
     }
     document.getElementById("Standard").onclick = function() {
         unHighlightGame()
         highlight("Standard");
-        gameMode = 0;
+        gameMode = 1;
         console.log("Game Mode: " + gameMode);
     }
     document.getElementById("twoPlayers").onclick = function() {
