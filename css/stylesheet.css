@@ -1,6 +1,7 @@
-.html {
-    margin: 5%;
-
+body {
+    margin-left: 5%;
+    margin-right:5%;
+    background-color: #0E5C8C;
 }
 .title {
     padding: 10px;
@@ -11,14 +12,17 @@
     text-align: center;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
-    color:black;
 }
 
 .title h1 {
     align-content: space-around;
     padding: 10px;
+    background-color: wheat;
     border: 3px solid black;
 
+}
+#visable {
+    border: grey solid 5px;
 }
 
 .grid-container-gameMode{
@@ -32,12 +36,7 @@
 
 .grid-container-players {
     display: grid;
-    border: darkgreen;
-    border-width: 5px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+    overflow: visible;
 }
 
 .selection-grid-container {
@@ -48,6 +47,7 @@
     margin: 0;
     padding: 0px;
     overflow: hidden;
+    
     background-color: #FFFFFF;
 }
 

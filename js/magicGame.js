@@ -4,6 +4,7 @@ class magicGame{
 
         this.amtPlayers = amtPlayers;
         this.gameMode = gameMode;
+        this.onlyOneSelect = false;
         this.createPlayers();
         this.defaultHealth = this.player1.getHealth();
 
@@ -25,7 +26,7 @@ class magicGame{
             current.setHtmlAccess(accessHtml);
 
             //Creates HTML GUI
-            this.playArea.innerHTML += '<div id="' + accessHtml + '"><div class="name">Name</div><div class="topButt"><div class="IncAmount">Inc5</div><div class="Inc1">&#9650</div></div><div class="health">20</div><div class="botButt"><div class="DecAmount">Dec5</div><div class="Dec1">&#9660</div></div></div>';
+            this.playArea.innerHTML += '<div class="player" id="' + accessHtml + '"><div class="name">Name</div><div class="topButt"><div class="IncAmount">Inc5</div><div class="Inc1">&#9650</div></div><div class="health">20</div><div class="botButt"><div class="DecAmount">Dec5</div><div class="Dec1">&#9660</div></div></div>';
             
             // <div id="accessHtml">
                 // <div class="name">Name</div>
@@ -41,7 +42,7 @@ class magicGame{
             // </div>
 
 
-            //Gives Functions to the buttons
+            //Gives Functions to the buttons 
             var thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("Inc1");
             
             thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", 1)");
@@ -50,11 +51,38 @@ class magicGame{
 
             thisQ[0].setAttribute("onclick", "game.setPlayerHealth(" + i + ", (-1))");
 
+            thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("DecAmount");
+
+            thisQ[0].setAttribute("onclick", "game.decAmount(" + i + ")");
+
+            thisQ = document.querySelector("#" + accessHtml).getElementsByClassName("IncAmount");
+
+            thisQ[0].setAttribute("onclick", "game.incAmount(" + i + ")");
         }
 
         var thisQ = document.querySelector(".reset").setAttribute("onclick", "game.reset()")
 
 
+    }
+
+    /*
+        inc and dec amount
+        --needs to select only only play to change GUI to a drop down button list
+        --when an input is recived in or out side of the list, we need to close the list. 
+        --only on instance of this list should appear
+    */
+
+    incAmount(selector){
+        console.log("Fuck you" + selector);
+        if(!this.onlyOneSelect){
+            var current = this.playerList[selector];
+            current.setAttribute()
+        }
+
+    }
+
+    decAmount(selector){
+        console.log("Fuck you2" + selector);
     }
 
     reset(){
